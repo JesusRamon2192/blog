@@ -1,3 +1,5 @@
+logo.addEventListener('click', () => location.hash='#perfil');
+
 window.addEventListener('DOMContentLoaded', navigator, false);
 window.addEventListener('hashchange', navigator, false);
 

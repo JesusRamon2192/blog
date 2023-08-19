@@ -1,3 +1,6 @@
 body {
-  background-color: aqua;
+  background-color: rgb(0, 150, 150);
+}
+body .inactive {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
