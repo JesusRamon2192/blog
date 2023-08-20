@@ -29,6 +29,9 @@ body header .header-icons-container .icons {
   justify-self: end;
   margin-right: 50px;
 }
+body header .header-icons-container .icons span {
+  color: white;
+}
 body header a {
   text-decoration: none;
   display: inline;
