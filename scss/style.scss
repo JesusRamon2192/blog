@@ -37,7 +37,64 @@ body {
         }
 
     }
+
+    nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 90px;
+        .nav-logo-container {
+            margin-left: 50px;
+            img {
+                width: 220px;
+                margin-top: 10px;
+            }
+        }
+        .nav-id-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-right: 50px;
+            a {
+                color: black;
+                border-bottom: 1px solid black;
+            }
+        }
+    }
+
+    .home {
+        height: 100%;
+        background-image: url(/css/assets/img/Cover.png);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        .main-container {
+            text-align: center;
+            margin-top: 5.7 rem;
+            font-family: monospace;
+            .main-container-title {
+                color: white;
+                letter-spacing: 10px;
+                font-size: 40px;
+                width: 50rem;
+            }
+            .main-container-buttom {
+                height: 40px;
+                background-color: #47cfac;
+                width: 100px;
+                margin: 100px auto;
+                display: grid;
+                a {
+                    font-size: 15px;
+                    margin: auto;
+                    font-weight: bold;
+                    color: black;
+                }
+            }
+        }
+    }
     .inactive {
         display: none;
     }
+    
 }
