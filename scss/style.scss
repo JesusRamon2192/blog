@@ -1,11 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+
 body {
     margin: 0;
     padding: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    display: contents;
+    font-family: 'Roboto Mono', monospace;
     header {
         width: 100%;
         height: 140px;
@@ -71,28 +70,73 @@ body {
         .main-container {
             text-align: center;
             margin-top: 5.7rem;
-            font-family: monospace;
             .main-container-title {
+                display: flex;
+                flex-wrap: wrap-reverse;
+                font-family: 'Roboto mono', monospace;
                 color: white;
                 letter-spacing: 10px;
-                font-size: 40px;
-                width: 50rem;
+                font-size: 30px;
+                font-weight: 700px;
+                width: auto;
             }
             .main-container-buttom {
                 height: 40px;
                 background-color: #47cfac;
-                width: 100px;
+                width: 110px;
+                align-items: center;
                 margin: 150px auto;
                 display: grid;
-                a {
-                    font-size: 15px;
+                :hover {
+                    background-color: #47cfac;
+                    transform: scale(1.1);
+                }
+                span {
+                    text-decoration: none;
+                    font-size: 18px;
                     margin: auto;
-                    font-weight: bold;
+                    font-weight: 700;
                     color: black;
                 }
             }
         }
     }
+
+    .blogs {
+        display: grid;
+        .blogs-news-container {
+            background-color: #e6e9ed;
+            padding: 0 50px 40px;
+            .blogs-main-new {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                grid-template-rows: 2fr;
+                
+                .blogs-news-img {
+                    grid-column: 1;
+                    img {
+                        width: 85%;
+                    }
+                }
+                .blogs-news-info {
+                    grid-column: 2;
+                    p {
+                        margin-bottom: 35px;
+                    }
+                }
+            }
+        }
+        .blogs-posts-container {
+            padding: 0 50px 40px;
+            h3 {
+                border-bottom: 1px solid #cdd2da;
+                padding-bottom: 20px;
+                text-align: center;
+
+            }
+        }
+    }
+
     .inactive {
         display: none;
     }

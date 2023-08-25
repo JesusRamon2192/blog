@@ -1,5 +1,7 @@
 logo.addEventListener('click', () => location.hash='#perfil');
 
+mainButton.addEventListener('click', () => location.hash='#blogs');
+
 window.addEventListener('DOMContentLoaded', navigator, false);
 window.addEventListener('hashchange', navigator, false);
 
@@ -8,7 +10,7 @@ function navigator() {
 
     location.hash.startsWith('#perfil')
     ? perfilPage()  :
-    location.hash.startsWith('#blog')
+    location.hash.startsWith('#miblog')
     ? blogPage()    :
     location.hash.startsWith('#blogs')
     ? blogsPage()   :
@@ -29,4 +31,6 @@ const blogPage = () => {
 
 const blogsPage = () => {
     console.log('BlogsPage');
+    home.classList.add('inactive');
+    blogs.classList.remove('inactive');
 };
