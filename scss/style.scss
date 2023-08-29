@@ -134,13 +134,36 @@ body {
                 text-align: center;
 
             }
+            .post-container {
+                display: inline-block;
+                padding-left: 10px;
+                max-width: 30%;
+                margin-bottom: 50px;
+                img {
+                    width: 100%;
+                }
+                p {
+                    margin-bottom: 35px;
+                }
+            }
         }
     }
 
+    footer {
+        width: 100%;
+        height: 80px;
+        background-color: #22272d;
+        border-top: 35px solid #47cfac;
+        text-align: center;
+        p {
+            color: white;
+            margin-top: 30px;
+        }
+    }
     .inactive {
         display: none;
     }
-    
+
     .blogs-button {
         border:1px solid #47cfac;
         padding: 10px 15px;
