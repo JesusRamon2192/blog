@@ -35,7 +35,10 @@ body {
             }
         }
     }
-
+    .grid-container {
+        max-width: 980px;
+        margin:auto;
+    }
     nav {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -165,11 +168,14 @@ body {
     }
 
     .blogs-button {
-        border:1px solid #47cfac;
-        padding: 10px 15px;
-        font-size: 12px;
+        height: 40px;
+        background-color: #47cfac;
+        width: 110px;
+        align-items: center;
+        display: grid;
+        justify-content: center;
+        cursor: pointer;
         :hover {
-            border: 1px solid white;
             color: white;
             background-color: #48CFAD;
             font-size: 18px;

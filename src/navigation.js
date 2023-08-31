@@ -2,8 +2,13 @@ logo.addEventListener('click', () => location.hash='#perfil');
 
 mainButton.addEventListener('click', () => location.hash='#blogs');
 
+blogsButton.forEach(function (e) {
+    e.addEventListener('click', () => location.hash='#miblog');
+});
+
 window.addEventListener('DOMContentLoaded', navigator, false);
 window.addEventListener('hashchange', navigator, false);
+
 
 function navigator() {
     console.log({location});
@@ -27,6 +32,10 @@ const perfilPage = () => {
 
 const blogPage = () => {
     console.log('BlogPage');
+    blogs.classList.add('inactive');
+    home.classList.add('inactive');
+    miBlog.classList.remove('inactive');
+
 };
 
 const blogsPage = () => {

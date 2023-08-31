@@ -8,4 +8,8 @@ const mainContainer = querySel(".main-container");
 
 const home = querySel(".home");
 
-const blogs = querySel(".blogs")
+const blogs = querySel(".blogs");
+
+const miBlog = querySel(".blog");
+
+const blogsButton = document.querySelectorAll(".blogs-button")
